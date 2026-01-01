@@ -12,7 +12,8 @@ const Navbar = () => {
        <li><NavLink>Contact</NavLink></li>
        </>
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+      <div className='p-3'>
+        <div className="navbar bg-base-100 shadow-sm rounded">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,9 +32,11 @@ const Navbar = () => {
       {Links}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn bg-primary">Button</a>
+  <div className="navbar-end text-[10px] md:text-xl ">
+     <button className="btn text-[10px] p-1 md:p-3 md:text-[15px]">Sign In</button>
+       <button className="btn bg-primary ml-3 font-bold text-[10px] p-1 md:p-3 md:text-[15px]">Sign Up</button>
   </div>
+</div>
 </div>
     );
 };
