@@ -11,8 +11,8 @@ const Banner = () => {
        <Carousel autoPlay={true} infiniteLoop={true} className='my-2 p-2'>
                 <div>
                     <div className='relative'> <img src={banner1} />
-                    <div className='absolute hidden
-        md:bottom-20 md:left-20'> 
+                    <div className='absolute hidden md:block
+                      md:bottom-20 md:left-20'> 
                     <button className="btn bg-primary rounded-2xl">Track Your Parcel</button>
                     <button className="btn ml-3 font-bold">Be A Rider</button>
                     </div>

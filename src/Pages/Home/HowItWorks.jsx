@@ -15,7 +15,7 @@ const HowItWorks = () => {
        
         <div className="grid grid-cols-1 md:grid-cols-4  gap-8">
 
-          <div className="text-center p-6 rounded-xl shadow hover:bg-primary transition  card">
+          <div className="p-6 rounded-xl shadow hover:bg-primary transition flex justify-center items-center card">
              <CiDeliveryTruck className="text-5xl text-black mx-auto mb-4" />
             <h1 className="text-xl font-semibold mb-2 card-title">Booking Pick & Dropt</h1>
             <p className="text-gray-600 small-desc">
@@ -27,7 +27,7 @@ const HowItWorks = () => {
           </div>
 
         
-          <div className="text-center p-6 rounded-xl shadow  hover:bg-primary transition card">
+          <div className=" p-6 rounded-xl shadow  hover:bg-primary transition flex justify-center items-center card">
             <CiDeliveryTruck className="text-5xl text-black mx-auto mb-4" />
             <h1 className="text-xl font-semibold mb-2 card-title">Cash On Delivery</h1>
             <p className="text-gray-600 small-desc">
@@ -39,7 +39,7 @@ const HowItWorks = () => {
           </div>
 
         
-          <div className="text-center p-6 rounded-xl shadow hover:bg-primary  transition  card">
+          <div className=" p-6 rounded-xl shadow hover:bg-primary  transition flex justify-center items-center card">
               <CiDeliveryTruck className="text-5xl text-black mx-auto mb-4" />
             <h1 className="text-xl font-semibold mb-2 card-title text-center">Delivery Hub</h1>
             <p className="text-gray-600 small-desc">
@@ -51,7 +51,7 @@ const HowItWorks = () => {
             
           </div>
          
-          <div className="text-center p-6 rounded-xl shadow hover:bg-primary transition  card">
+          <div className=" p-6 rounded-xl shadow hover:bg-primary transition flex justify-center items-center card">
              <CiDeliveryTruck className="text-5xl text-black mx-auto mb-4" />
             <h1 className="text-xl font-semibold mb-2 card-title">Booking SME & Corporate</h1>
             <p className="text-gray-600 small-desc">
