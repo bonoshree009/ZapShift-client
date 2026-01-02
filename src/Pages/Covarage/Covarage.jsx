@@ -1,9 +1,12 @@
 import React from 'react';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css'
+import { useLoaderData } from 'react-router';
 
 const Covarage = () => {
     const position = [24.3745,88.6042]
+    const areapromise = useLoaderData()
+    console.log(areapromise)
 
     return (
         <div >
