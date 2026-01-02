@@ -5,6 +5,7 @@ import Home from "../Pages/Home/Home/Home";
 import Covarage from "../Pages/Covarage/Covarage";
 import { Component } from "react";
 import AboutUs from "../Pages/About/AboutUs";
+import AuthLayout from "../Layouts/AuthLayout";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -18,4 +19,12 @@ export const router = createBrowserRouter([
         {path :'/about', Component: AboutUs}
     ]
   },
+  {
+    path: '/',
+    Component:AuthLayout,
+    children:[
+     { path:'/register',Component},
+     { path:'/login',Component}
+    ]
+  }
 ]);
