@@ -11,7 +11,7 @@ export const router = createBrowserRouter([
       { index: true, Component: Home},
       {path:'/covarage',
         Component:Covarage ,
-        loader:()=> fetch('/warehouse.json').then(res => res.json()),
+        loader:()=> fetch('/warehouses.json').then(res => res.json()),
         }
     ]
   },

@@ -5,8 +5,8 @@ import { useLoaderData } from 'react-router';
 
 const Covarage = () => {
     const position = [24.3745,88.6042]
-    const areapromise = useLoaderData()
-    console.log(areapromise)
+    const areadata = useLoaderData()
+    console.log(areadata)
 
     return (
         <div >
@@ -16,16 +16,16 @@ const Covarage = () => {
             <div className='w-full h-150'>
 
                 <MapContainer center={position} zoom={7} scrollWheelZoom={false} className='h-150'>
-                  <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    />
-          <Marker position={position}>
-      <Popup>
-        A pretty CSS3 popup. <br /> Easily customizable.
-      </Popup>
-    </Marker>
-                </MapContainer>
+
+                  <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+
+                 {
+                    areadata.map((area ,index)=>  <Marker key ={index} position={[area.latitude,area.longitude]}>
+                   <Popup> <strong>{area.district}</strong>:{area.covered_area.join(', ')}</Popup>
+                  </Marker>)
+                 }
+               </MapContainer>
             </div>
         </div>
     );
