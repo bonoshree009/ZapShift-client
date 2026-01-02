@@ -6,6 +6,9 @@ import Covarage from "../Pages/Covarage/Covarage";
 import { Component } from "react";
 import AboutUs from "../Pages/About/AboutUs";
 import AuthLayout from "../Layouts/AuthLayout";
+import Register from "../Pages/AuthPage/Register";
+import Login from "../Pages/AuthPage/Login";
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -23,8 +26,8 @@ export const router = createBrowserRouter([
     path: '/',
     Component:AuthLayout,
     children:[
-     { path:'/register',Component},
-     { path:'/login',Component}
+     { path:'/register',Component:Register},
+     { path:'/login',Component:Login},
     ]
   }
 ]);
