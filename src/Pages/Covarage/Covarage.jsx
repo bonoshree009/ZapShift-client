@@ -46,9 +46,9 @@ const Covarage = () => {
             </div>
              </form>
 
-            <div className='w-full h-150'>
+            <div className='w-full h-150 px-4'>
 
-                <MapContainer center={position} zoom={7} scrollWheelZoom={false} className='h-150' ref={mapref}>
+                <MapContainer center={position} zoom={7} scrollWheelZoom={false} className='h-50 md:h-150' ref={mapref}>
 
                   <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
